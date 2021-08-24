@@ -124,7 +124,14 @@ header figure{
 }
 main,
 .ingressos{width: 100%;}
-.container{padding:24px;}
+.container{
+	padding:24px;
+	max-width: 1366px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: block;
+}
 h1{font-size: 32px;}
 h1,
 h2, 
@@ -270,10 +277,9 @@ h3{
   font-size: 20px;
   margin-bottom: 24px;
 }
-.cadastro .container{
-  border-top: #088B38 solid 1px;
-  border-bottom: #088B38 solid 1px;
-  background: #fff;
+.cadastro .container {
+    border: #088B38 solid 1px;
+    background: #fff;
 }
 .cadastro input{
   border:1px solid #BFBFBF;
@@ -397,8 +403,12 @@ h3{
 
   /* Cadastro */
   main>.container:last-of-type{padding-bottom: 0;}
-  .cadastro .container {position: static;}
-  .cadastro .container{padding: 64px 257px;}
+  /* section.cadastro {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+} */
+  .cadastro .container{padding: 64px 205px;}
   .cadastro fieldset{display: flex;}
   .cadastro h4{
     margin-bottom: 27px;
